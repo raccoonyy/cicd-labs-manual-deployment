@@ -14,5 +14,5 @@ jobs:
         IP: 13.124.238.160
       run: |
         export AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }}
-        export AWS_SECRET_ACCESS_KEY=${{ secretes.AWS_SECRET_ACCESS_KEY }}
+        export AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws s3 cp index.html s3://workshop-practice/$IP/ --acl public-read
